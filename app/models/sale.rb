@@ -18,7 +18,7 @@ class Sale < ActiveRecord::Base
   	total_tax
  	end
 
- 	def tax_cal
+ 	def tax_calculation
  		price = self.price * self.total_tax
  		if self.total_tax != 1.00
  			Rational(price).ceil(+1).to_f

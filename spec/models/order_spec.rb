@@ -8,17 +8,17 @@ describe Order, :type => :model do
       it "1, book, 12.49" do
         sale = create(:sale, { price: 12.49, quantity: 1})
         #byebug
-        expect(sale.tax_cal).to eq(12.49)
+        expect(sale.tax_calculation).to eq(12.49)
       end
 
       it "1, music cd, 14.99" do
         sale = create(:sale, { price: 14.99, quantity: 1})
-        expect(sale.tax_cal).to eq(16.49)
+        expect(sale.tax_calculation).to eq(16.49)
       end
 
       it "1, chocolate bar, 0.85" do
         sale = create(:sale, { price: 0.85, quantity: 1})
-        expect(sale.tax_cal).to eq(0.85)
+        expect(sale.tax_calculation).to eq(0.85)
       end
     end
 
