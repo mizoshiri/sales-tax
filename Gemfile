@@ -16,6 +16,10 @@ group :development, :test do
   gem 'capybara',                     '~> 2.0'
   gem 'factory_girl_rails',           '~> 4.2'
   gem 'rspec-rails',                  '3.0.0.rc1'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
 end
 
 group :doc do
